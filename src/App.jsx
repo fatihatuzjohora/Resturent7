@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div className='max-w-7xl mx-auto'>
-
+<div className="navbar bg-base-100">
+  <a className="btn btn-ghost text-xl">daisyUI</a>
+</div>
     <NavigationBer></NavigationBer>
     </div>
   )
