@@ -1,0 +1,57 @@
+
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir Fry",
+      "recipe_image": "https://i.ibb.co/T8vC3gB/images-7.jpg",
+      "short_description": "A delicious and healthy chicken stir fry with a mix of fresh vegetables.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Vegetable Pasta",
+      "recipe_image": "https://i.ibb.co/9HdTk48/download-2.jpg",
+      "short_description": "A hearty vegetable pasta dish loaded with colorful veggies and herbs.",
+      "ingredients": ["300 g pasta", "2 bell peppers", "1 zucchini", "1 onion", "2 cloves garlic"],
+      "preparing_time": "25 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Grilled Salmon",
+      "recipe_image": "https://i.ibb.co/84wZxw8/download.jpg",
+      "short_description": "Delicious grilled salmon seasoned with herbs and served with lemon wedges.",
+      "ingredients": ["4 salmon fillets", "2 tbsp olive oil", "1 lemon", "Salt and pepper to taste"],
+      "preparing_time": "20 min",
+      "calories": "300 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Caprese Salad",
+      "recipe_image": "https://i.ibb.co/ngwmhxp/1546423.jpg",
+      "short_description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil leaves.",
+      "ingredients": ["3 tomatoes", "200 g fresh mozzarella", "Handful of fresh basil leaves", "2 tbsp balsamic vinegar"],
+      "preparing_time": "15 min",
+      "calories": "180 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Mango Smoothie Bowl",
+      "recipe_image": "https://i.ibb.co/cTTNvTk/istockphoto-588595864-612x612.jpg",
+      "short_description": "A refreshing and tropical smoothie bowl topped with fresh fruits and nuts.",
+      "ingredients": ["2 ripe mangoes", "1 banana", "200 ml coconut milk", "Handful of granola", "Fresh fruits for topping"],
+      "preparing_time": "10 min",
+      "calories": "220 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Quinoa Salad",
+      "recipe_image": "https://i.ibb.co/L8S0wbv/images-3.jpg",
+      "short_description": "A nutritious and flavorful salad made with quinoa, veggies, and a zesty dressing.",
+      "ingredients": ["1 cup quinoa", "1 cucumber", "1 bell pepper", "1/4 cup feta cheese", "2 tbsp lemon juice"],
+      "preparing_time": "20 min",
+      "calories": "280 calories"
+    }
+  ]

@@ -1,16 +1,18 @@
 
 import './App.css'
+import Bannar from './Component/Bannar/Bannar'
 import NavigationBer from './Component/MainNavigationBer/NavigationBer'
+import Recepies from './Component/Recepies/Recepies'
 
 function App() {
   
 
   return (
     <div className='max-w-7xl mx-auto'>
-<div className="navbar bg-base-100">
-  <a className="btn btn-ghost text-xl">daisyUI</a>
-</div>
+
     <NavigationBer></NavigationBer>
+    <Bannar></Bannar>
+    <Recepies></Recepies>
     </div>
   )
 }
