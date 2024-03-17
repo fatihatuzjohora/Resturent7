@@ -32,12 +32,12 @@ const NavigationBer = () => {
   <div className="navbar-end gap-8">
 
   <div className="  flex items-center bg-slate-100 w-24 md:w-auto rounded-3xl p-2 ">
-  <CiSearch className="text-2xl" />
-      <input type="text" placeholder=" Search" className="input bg-slate-100 " />
+  <CiSearch className="text-xl text-[#150B2BB3] ml-4" />
+      <input type="text" placeholder=" Search" className=" outline-none focus:border-0 bg-slate-100 rounded-3xl " />
     </div>
 
   <div className="w-10 rounded-full">
-          <img className="rounded-full" alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          <img className="rounded-full" alt="Tailwind CSS Navbar component" src="https://i.ibb.co/HYfJ7NL/download-4.jpg" />
         </div>
   </div>
 </div>
