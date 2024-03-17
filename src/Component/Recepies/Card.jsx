@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { IoMdTime } from "react-icons/io";
 import { SlFire } from "react-icons/sl";
 
@@ -80,7 +81,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
 
         <div className="card shadow-xl border border-[#28282833] mt-5 p-5">
           <div>
-            <h1 className="text-2xl text-center text-black font-semibold pb-5">
+            <h1 className="text-2xl text-center text-black font-semibold pb-5 border-b border-[#28282833]">
               Want to cook: <span className="">{cook.length}</span>
             </h1>
             {/* <div className="text-[#878787] font-semibold text-xl flex justify-between items-center mt-3">
@@ -90,7 +91,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
             </div> */}
 
             <div className="overflow-x-auto rounded-md">
-              <table className="table border bg-white">
+              <table className="table border border-none bg-white">
                 <thead>
                   <tr className="text-[#878787] text-center font-semibold text-xl mt-5">
                     <th></th>
@@ -168,7 +169,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
             </h1>
 
             <div className="overflow-x-auto rounded-md">
-              <table className="table border bg-white">
+              <table className="table border border-none bg-white">
                 <thead>
                   <tr className="text-[#878787] text-center font-semibold text-xl mt-5">
                     <th></th>
