@@ -80,50 +80,86 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
 
         <div className="card shadow-xl border border-[#28282833] mt-5 p-5">
           <div>
-            <h1 className="text-2xl text-center text-black font-semibold border-b border-[#28282833] pb-5">
+            <h1 className="text-2xl text-center text-black font-semibold pb-5">
               Want to cook: <span className="">{cook.length}</span>
             </h1>
-            <div className="text-[#878787] font-semibold text-xl flex justify-between items-center mt-3">
+            {/* <div className="text-[#878787] font-semibold text-xl flex justify-between items-center mt-3">
               <p>Name</p>
               <p>Time</p>
               <p>Calories</p>
-            </div>
+            </div> */}
 
-            {cook.map((item, index) => {
-              const {
-                recipe_id,
-                recipe_name,
-                recipe_image,
-                short_description,
-                ingredients,
-                preparing_time,
-                calories,
-              } = item;
-              return (
-                <div
-                  key={index}
-                  className="shadow-md rounded-md mt-3 bg-[#28282808] p-4 flex justify-between items-center gap-5 "
-                >
-                  <p className="text-[#282828CC] font-semibold">{index + 1}</p>
-                  <p className="text-[#282828B3] font-semibold ">
-                    {recipe_name}
-                  </p>
-                  <p className="text-[#282828B3] font-semibold flex items-center gap-2">
-                    <IoMdTime /> <span>{preparing_time} Minutes</span>
-                  </p>
-                  <p className="text-[#282828B3] font-semibold flex items-center gap-2">
-                    <SlFire />
-                    <span>{calories} Calories</span>
-                  </p>
-                  <button
-                    onClick={() => handlePreparing(item)}
-                    className="btn text-[#150B2B] bg-[#0BE58A] text-xl rounded-3xl"
-                  >
-                    Preparing
-                  </button>
-                </div>
-              );
-            })}
+            <div className="overflow-x-auto rounded-md">
+              <table className="table border bg-white">
+                <thead>
+                  <tr className="text-[#878787] text-center font-semibold text-xl mt-5">
+                    <th></th>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Calories</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cook.map((item, index) => {
+                    const {
+                      recipe_id,
+                      recipe_name,
+                      recipe_image,
+                      short_description,
+                      ingredients,
+                      preparing_time,
+                      calories,
+                    } = item;
+                    return (
+                      //     <div
+                      //       key={index}
+                      //       className="shadow-md rounded-md mt-3 bg-[#28282808] p-4 flex justify-between items-center gap-5 "
+                      //     >
+                      //       <p className="text-[#282828CC] font-semibold">{index + 1}</p>
+                      //       <p className="text-[#282828B3] font-semibold ">
+                      //         {recipe_name}
+                      //       </p>
+                      //       <p className="text-[#282828B3] font-semibold ">
+                      //         <span>{preparing_time} Minutes</span>
+                      //       </p>
+                      //       <p className="text-[#282828B3] font-semibold">
+                      //         <span>{calories} Calories</span>
+                      //       </p>
+                      //       <button
+                      //         onClick={() => handlePreparing(item)}
+                      //         className="btn text-[#150B2B] bg-[#0BE58A] text-xl rounded-3xl"
+                      //       >
+                      //         Preparing
+                      //       </button>
+                      //     </div>
+
+                      <tr
+                        key={index}
+                        className="shadow-md text-[15px] text-[#878787] font-semibold round-md mt-5 bg-[#28282808] p-2 justify-between items-center text-center gap-5"
+                      >
+                        <td>{index + 1}</td>
+                        <td>{recipe_name}</td>
+                        <td>
+                          <span>{preparing_time} Minutes</span>
+                        </td>
+                        <td>
+                          <span>{calories} Calories</span>
+                        </td>
+                        <td>
+                          <button
+                            onClick={() => handlePreparing(item)}
+                            className="btn text-[#150B2B] bg-[#0BE58A] text-xl rounded-3xl"
+                          >
+                            Preparing
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div className="">
@@ -131,7 +167,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
               Currently cooking: <span>{preparing.length}</span>
             </h1>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto rounded-md">
               <table className="table border bg-white">
                 <thead>
                   <tr className="text-[#878787] text-center font-semibold text-xl mt-5">
