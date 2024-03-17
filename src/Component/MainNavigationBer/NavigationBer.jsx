@@ -1,3 +1,5 @@
+
+import { CiSearch } from "react-icons/ci";
 const NavigationBer = () => {
   return (
     <>
@@ -29,8 +31,9 @@ const NavigationBer = () => {
 
   <div className="navbar-end gap-8">
 
-  <div className="form-control ">
-      <input type="text" placeholder="Search" className="input bg-slate-100 w-24 md:w-auto rounded-3xl" />
+  <div className="  flex items-center bg-slate-100 w-24 md:w-auto rounded-3xl p-2 ">
+  <CiSearch className="text-2xl" />
+      <input type="text" placeholder=" Search" className="input bg-slate-100 " />
     </div>
 
   <div className="w-10 rounded-full">
