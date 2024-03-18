@@ -142,10 +142,10 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
                         <td>{index + 1}</td>
                         <td>{recipe_name}</td>
                         <td>
-                          <span>{preparing_time} Minutes</span>
+                          <span className="flex gap-1"><span>{preparing_time}</span> <span>Minutes</span> </span> 
                         </td>
                         <td>
-                          <span>{calories} Calories</span>
+                          <span className="flex gap-1"><span >{calories}</span> <span>Calories</span></span>
                         </td>
                         <td>
                           <button
