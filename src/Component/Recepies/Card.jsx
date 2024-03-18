@@ -10,7 +10,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
   const cal = preparing.reduce((pre, current) => pre + +current.calories, 0);
   return (
     <div>
-      <div className="flex justify-between gap-7 items-start">
+      <div className="flex flex-col md:flex-row justify-between gap-7 items-start">
         <div className=" grid grid-cols-1 lg:grid-cols-2 justify-between  gap-7">
           {data.map((item, index) => {
             const {
@@ -79,7 +79,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
           })}
         </div>
 
-        <div className="card shadow-xl border border-[#28282833] mt-5 p-5">
+        <div className="card shadow-xl border border-[#28282833] mt-5 md:p-5">
           <div>
             <h1 className="text-2xl text-center text-black font-semibold pb-5 border-b border-[#28282833]">
               Want to cook: <span className="">{cook.length}</span>
@@ -171,7 +171,7 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
             <div className="overflow-x-auto rounded-md">
               <table className="table border border-none bg-white">
                 <thead>
-                  <tr className="text-[#878787] text-center font-semibold text-xl mt-5">
+                  <tr className="text-[#878787] font-semibold text-xl mt-5">
                     <th></th>
                     <th>Name</th>
                     <th>Time</th>
@@ -197,10 +197,10 @@ const Card = ({ data, handleClick, cook, handlePreparing, preparing }) => {
                         <td>{index + 1}</td>
                         <td>{recipe_name}</td>
                         <td>
-                          <span>{preparing_time} Minutes</span>
+                          <span className="flex gap-1 text-right"><span>{preparing_time}</span> <span>Minutes</span> </span> 
                         </td>
                         <td>
-                          <span>{calories} Calories</span>
+                          <span className="flex gap-1 text-righ"><span >{calories}</span> <span>Calories</span></span>
                         </td>
                       </tr>
                     );

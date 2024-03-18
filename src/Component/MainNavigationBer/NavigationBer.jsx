@@ -64,7 +64,7 @@ const NavigationBer = () => {
           </div>
 
           <div className="navbar-end gap-8">
-            <div className="  flex items-center bg-slate-100 w-24 md:w-auto rounded-3xl p-2 ">
+            <div className="hidden md:flex items-center bg-slate-100 w-24 md:w-auto rounded-3xl p-2 ">
               <CiSearch className="text-xl text-[#150B2BB3] ml-4" />
               <input
                 type="text"

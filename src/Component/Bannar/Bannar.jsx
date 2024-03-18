@@ -17,7 +17,7 @@ const Bannar = () => {
           className="hero-overlay bg-opacity-60 "
         ></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="p-40">
+          <div className="md:p-40 p-3">
             <h1 className="mb-10 text-5xl font-bold text-white">
               Discover an exceptional cooking class tailored for you!
             </h1>
